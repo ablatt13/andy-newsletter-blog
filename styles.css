@@ -1,0 +1,139 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 750px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* Styles for desktops */
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-green: #9ee2bf;
+    --mid-green: #bfecd3;
+    --light-green: #dff6e9;
+    --dark-pink: #E2A69E;
+    --real-pink: #E29EC1;
+    --bar-width: 120px;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    font-family: Rubik;
+    padding: 0; 
+    margin: 0; 
+    width: calc(100% - 120px);
+    position: absolute;
+    left: var(--bar-width);
+}
+
+/* THIS IS FOR THE NAVBAR */
+
+.bar-container {
+    height: 100%;
+    width: var(--bar-width);
+    border-right: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+nav header {
+    font-size: 1.5rem;
+    border-bottom: 5px double black;
+    text-align: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+
+#navbar ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1em;
+    text-align: right;
+}
+
+#navbar ul li {
+    padding: 10px 5px 10px 0;
+    border-bottom: 5px solid black;
+}
+
+li>a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+li>a:hover {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+.year {
+    text-align: left;
+    justify-content: left;
+}
+
+
+
+/* THIS IS FOR THE ACTUAL INFO BODY */
+
+.groupie {
+    width: 100%;
+}
+
+.headliner {
+    width: 100%;
+    left: var(--bar-width);
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.5em;
+    background-color: var(--light-green);
+    position: sticky;
+    top: 0; 
+
+}
+
+p {
+    margin-bottom: 1rem;
+    padding: 0 2rem; 
+}
+.pics{
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    margin-bottom: 1rem;
+    padding: 0 2rem; 
+    height: 350px;
+}
