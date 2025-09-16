@@ -80,10 +80,10 @@ nav header {
     text-align: right;
 }
 
-#navbar ul li {
+/*#navbar ul li {*/
     /*padding: 10px 5px 10px 0;*/
     /*border-bottom: 5px solid black;*/
-}
+/*}*/
 
 li>a, .disney {
     font-weight: bold;
