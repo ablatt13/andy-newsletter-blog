@@ -1,0 +1,222 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 750px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar, .bar-container {
+        content-visibility: hidden;
+        width: 0;
+    }
+
+    .headliner {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* Styles for desktops */
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-green: #9ee2bf;
+    --mid-green: #bfecd3;
+    --light-green: #dff6e9;
+    --dark-pink: #E2A69E;
+    --real-pink: #E29EC1;
+    --bar-width: 120px;
+}
+
+
+
+body {
+    background: whitesmoke;
+    color: black;
+    font-family: Rubik;
+    padding: 0; 
+    margin: 0; 
+    width: calc(100% - 120px);
+    position: absolute;
+    left: var(--bar-width);
+}
+
+/* THIS IS FOR THE NAVBAR */
+
+.bar-container {
+    height: 100%;
+    width: var(--bar-width);
+    border-right: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+nav header {
+    font-size: 1.2rem;
+    border-bottom: 5px double black;
+    text-align: center;
+    display: wrap;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.smallN {
+    font-size: 1rem;
+}
+
+
+#navbar ul {
+    list-style: none;
+
+    margin: 0;
+    font-size: 1em;
+    width: 100%;
+    border: 2px solid green;
+
+   
+}
+
+/*#navbar ul li {*/
+    /*padding: 10px 5px 10px 0;*/
+    /*border-bottom: 5px solid black;*/
+/*}*/
+
+li>a, .disney {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+li>a:hover, .disney:hover {
+    text-decoration: none;
+    color: var(--real-pink);
+    
+}
+
+.year {
+    text-align: left;
+    justify-content: left;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    padding: 2px; 
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+
+}
+
+.bigOne {
+    text-align: left; 
+    padding: 2px 5px 0px; 
+    border-bottom: 1px solid black;
+}
+
+.WDI {
+    text-align: left !important;
+    justify-content: left !important;
+    align-items: left !important;
+}
+
+
+
+/* THIS IS FOR THE ACTUAL INFO BODY */
+
+.groupie {
+    width: 100%;
+}
+
+.headliner {
+    width: 100%;
+    background-color: var(--real-pink);
+    display: flex;
+    border-bottom: 5px double black;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 995;
+  }
+  
+  .subliner {
+    width: 100%; 
+    background-color: var(--light-green);
+    display: flex;
+    border-bottom: 2px solid black;
+    padding: 2px 25px;
+    position: sticky;
+    top: 35px;
+    left: 0;
+    margin-top: 0;
+    z-index: 990;
+  }
+  
+
+.category {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.newsletter {
+    padding-top: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    padding: 0 2rem; 
+}
+.pics{
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    margin-bottom: 1rem;
+    padding: 0 2rem; 
+    height: 350px;
+}
+
+#NewsOne, #NewsTwo, #NewsThree, #NewsFour, #NewsFive, #NewsSix, #NewsSeven, #NewsEight, #NewsNine, #NewsTen, #NewsEleven, #Disney {
+    position: relative;
+    top: -40px;  
+    width: 100%; 
+}
+
+.listTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.listDeets {
+    list-style: none;
+    padding: 0 3rem; 
+    margin-bottom: 1rem;
+}
