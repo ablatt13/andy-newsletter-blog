@@ -35,14 +35,11 @@ body {
     body {
         width: 100%;
         left: 0; 
+        font-size: 14px;
     }
 
     img { 
         max-width: 90vw; 
-    }
-
-    h2 {
-        font-size: 14px;
     }
 
     .bar-container {
