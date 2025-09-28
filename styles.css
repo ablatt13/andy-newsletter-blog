@@ -41,6 +41,10 @@ body {
         max-width: 90vw; 
     }
 
+    .headliner {
+        font-size: 14px;
+    }
+
     .bar-container {
         content-visibility: hidden;
     }
